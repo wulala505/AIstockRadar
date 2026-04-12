@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0a1628;
+  }
+}
+
+@layer utilities {
+  .text-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .glass-card {
+    background: rgba(15, 30, 53, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .signal-border-green {
+    border-left: 4px solid #22c55e;
+  }
+  .signal-border-yellow {
+    border-left: 4px solid #eab308;
+  }
+  .signal-border-red {
+    border-left: 4px solid #ef4444;
+  }
+}

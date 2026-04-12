@@ -1,0 +1,68 @@
+{
+  "dashboard": {
+    "title": "TSMC Rebalancing Signal Tracker",
+    "subtitle": "Five Key Signals · Auto-Updated",
+    "lastUpdated": "Last Updated",
+    "overallStatus": "Overall Status",
+    "recommendation": "Recommendation",
+    "dataSource": "Data Source",
+    "signalCount": "signals warning"
+  },
+  "signals": {
+    "capex": {
+      "title": "AI Hyperscaler Capex",
+      "description": "Track NVDA / MSFT / GOOGL / AMZN / META quarterly capex",
+      "metric": "Quarterly Capex (B USD)"
+    },
+    "competition": {
+      "title": "Advanced Node Competition",
+      "description": "Samsung / Intel process progress and customer dynamics",
+      "metric": "Competitive Threat Level"
+    },
+    "eps": {
+      "title": "TSMC EPS Growth",
+      "description": "Quarterly EPS YoY growth rate tracking",
+      "metric": "EPS YoY Growth (%)"
+    },
+    "valuation": {
+      "title": "P/E + PEG Valuation",
+      "description": "TSMC valuation level monitoring",
+      "metric": "P/E Ratio"
+    },
+    "macro": {
+      "title": "Macro Environment",
+      "description": "Fed Rate · ISM PMI · SOX Index · Yield Curve",
+      "metric": "Macro Indicators"
+    }
+  },
+  "status": {
+    "green": "Hold",
+    "yellow": "Watch",
+    "red": "Rebalance",
+    "hold": "Continue Holding",
+    "watch": "Monitor Closely",
+    "rebalance": "Consider Rebalancing"
+  },
+  "actions": {
+    "green": "No action needed. Continue holding TSMC.",
+    "yellow": "Start monitoring. Prepare a phased rotation plan.",
+    "red": "Rebalance triggered. Consider moving 10-15% to dividend ETFs."
+  },
+  "nav": {
+    "dashboard": "Overview",
+    "signals": "Signal Detail",
+    "history": "History"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Failed to load",
+    "retry": "Retry",
+    "warning": "Warning",
+    "noWarning": "No Warning",
+    "threshold": "Threshold",
+    "current": "Current",
+    "quarter": "Q",
+    "yoyGrowth": "YoY Growth",
+    "disclaimer": "This website is for informational purposes only and does not constitute financial advice."
+  }
+}
