@@ -3,7 +3,7 @@
 > 五大關鍵訊號，自動判斷台積電是否進入轉換時機  
 > Five signals. One dashboard. Know when to rebalance.
 
-**Live:** https://aistockradar-[HASH]-de.a.run.app
+**Live:** https://aistockradar-235152534697.asia-east1.run.app
 
 ---
 
