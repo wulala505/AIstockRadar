@@ -3,7 +3,7 @@
 > 五大關鍵訊號，自動判斷台積電是否進入轉換時機  
 > Five signals. One dashboard. Know when to rebalance.
 
-**Live:** https://seo.kkmarketing.solutions
+**Live:** https://aistockradar-235152534697.asia-east1.run.app
 
 ---
 
@@ -291,14 +291,14 @@ gcloud run deploy aistockradar \
 # Daily macro refresh (9AM Taiwan time)
 gcloud scheduler jobs create http refresh-daily \
   --schedule="0 9 * * *" \
-  --uri="https://seo.kkmarketing.solutions/api/refresh?type=macro" \
+  --uri="https://YOUR_CLOUD_RUN_URL/api/refresh?type=macro" \
   --time-zone="Asia/Taipei" \
   --location=asia-east1
 
 # Weekly full refresh (Monday 8AM)
 gcloud scheduler jobs create http refresh-weekly \
   --schedule="0 8 * * 1" \
-  --uri="https://seo.kkmarketing.solutions/api/refresh?type=all" \
+  --uri="https://YOUR_CLOUD_RUN_URL/api/refresh?type=all" \
   --time-zone="Asia/Taipei" \
   --location=asia-east1
 ```
