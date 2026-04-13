@@ -32,3 +32,4 @@ Thumbs.db
 !tsconfig.json
 !package.json
 !package-lock.json
+!messages/*.json
