@@ -16,7 +16,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  if (!['zh-TW', 'en', 'ja'].includes(locale)) notFound();
+  if (!['zh-TW', 'en'].includes(locale)) notFound();
   const messages = await getMessages();
 
   return (

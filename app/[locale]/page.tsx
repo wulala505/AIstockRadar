@@ -6,7 +6,6 @@ import MacroPanel from '@/components/MacroPanel';
 import CompetitionPanel from '@/components/CompetitionPanel';
 import ValuationPanel from '@/components/ValuationPanel';
 import LanguageToggle from '@/components/LanguageToggle';
-import KofiButton from '@/components/KofiButton';
 import {
   evaluateCapex,
   evaluateCompetition,
@@ -72,11 +71,10 @@ export default async function DashboardPage() {
             </div>
             <p className="text-white/50 text-xs mt-0.5 pl-7">{t('dashboard.subtitle')}</p>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="text-xs text-white/40 hidden md:block">
+          <div className="flex items-center gap-3">
+            <span className="text-xs text-white/40 hidden sm:block">
               {t('dashboard.lastUpdated')}: {updatedAt}
             </span>
-            <KofiButton />
             <LanguageToggle />
           </div>
         </div>

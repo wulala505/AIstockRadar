@@ -1,9 +1,3 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/signals/route": "app/api/signals/route.js",
-  "/api/capex/route": "app/api/capex/route.js",
-  "/api/valuation/route": "app/api/valuation/route.js",
-  "/api/tsmc-eps/route": "app/api/tsmc-eps/route.js",
-  "/api/macro/route": "app/api/macro/route.js",
   "/[locale]/page": "app/[locale]/page.js"
 }

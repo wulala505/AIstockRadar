@@ -2,40 +2,25 @@
 import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 
-const LOCALES = [
-  { code: 'zh-TW', label: '繁中' },
-  { code: 'en',    label: 'EN'   },
-  { code: 'ja',    label: '日本語' },
-] as const;
-
 export default function LanguageToggle() {
   const locale = useLocale();
-  const router  = useRouter();
+  const router = useRouter();
   const pathname = usePathname();
 
-  const switchLocale = (newLocale: string) => {
-    if (newLocale === locale) return;
+  const toggleLocale = () => {
+    const newLocale = locale === 'zh-TW' ? 'en' : 'zh-TW';
     const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
     router.push(newPath);
   };
 
   return (
-    <div className="flex items-center gap-1 bg-white/8 rounded-full p-1 border border-white/10">
-      {LOCALES.map(({ code, label }) => (
-        <button
-          key={code}
-          onClick={() => switchLocale(code)}
-          className={`
-            px-2.5 py-1 rounded-full text-xs font-medium transition-all duration-200
-            ${locale === code
-              ? 'bg-[#f0ad23] text-[#0a1628] font-semibold shadow-sm'
-              : 'text-white/50 hover:text-white/80 hover:bg-white/10'
-            }
-          `}
-        >
-          {label}
-        </button>
-      ))}
-    </div>
+    <button
+      onClick={toggleLocale}
+      className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-sm font-medium text-white/80 hover:text-white"
+    >
+      <span>{locale === 'zh-TW' ? '繁中' : 'EN'}</span>
+      <span className="text-white/40">→</span>
+      <span>{locale === 'zh-TW' ? 'EN' : '繁中'}</span>
+    </button>
   );
 }
